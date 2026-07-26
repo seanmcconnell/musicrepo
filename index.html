@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean McConnell</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+            border: 2px solid #333;
+            background-color: #1a1a1a;
+        }
+
+        .profile-pic-placeholder {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            margin-bottom: 16px;
+            border: 2px solid #333;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #666;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px 20px;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .link-button:hover {
+            background-color: #2a2a2a;
+            border-color: #555;
+            transform: scale(1.02);
+        }
+
+        .link-button:active {
+            transform: scale(0.98);
+        }
+
+        .link-icon {
+            position: absolute;
+            left: 16px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .link-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #ffffff;
+        }
+
+        .section-header {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #666;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            align-self: flex-start;
+        }
+
+        .audio-section {
+            width: 100%;
+            margin-top: 32px;
+        }
+
+        .audio-player {
+            width: 100%;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        .audio-player .track-name {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .audio-player audio {
+            width: 100%;
+            height: 36px;
+            filter: invert(1) hue-rotate(180deg);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #444;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            .link-button {
+                padding: 14px 16px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Profile Picture: Replace src with your image file -->
+    <div class="profile-pic-placeholder">S</div>
+    <!-- <img src="profile.jpg" alt="Sean McConnell" class="profile-pic"> -->
+
+    <h1 class="name">Sean McConnell</h1>
+    <!-- <p class="tagline">New single out now</p> -->
+
+    <div class="links">
+        <!-- Contact Links -->
+        <a href="tel:+353867304075" class="link-button">
+            <span class="link-icon">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 9-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </span>
+            Phone
+        </a>
+
+        <a href="mailto:sean.charlesmcconnell@gmail.com" class="link-button">
+            <span class="link-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            Email
+        </a>
+
+        <a href="https://revolut.me/comida" class="link-button">
+            <span class="link-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79l10 1.93z 1.1 9 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-3c0-.55-.45-1-1-1h8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2V4.1c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </span>
+            Tips (Revolut)
+        </a>
+    </div>
+
+    <div class="audio-section">
+        <p class="section-header">Music</p>
+        <div class="audio-player">
+            <p class="track-name">Hartigan's - Just Can't</p>
+            <video controls preload="metadata" style="width:100%; border-radius:4px;">
+                <source src="hartigans_just_cant.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+        <div class="audio-player">
+            <p class="track-name">Soul to Squeeze - Red Hot Chili Peppers</p>
+            <audio controls preload="metadata">
+                <source src="C:\Users\New User\Documents\Guitar\webpage\soul-to-squeeze-2025.mp4" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <p class="track-name">Dancing in the Dark - Bruce Springsteen</p>
+            <audio controls preload="metadata">
+                <source src="C:\Users\New User\Documents\Guitar\webpage\dancing-in-the-dark.mp4" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+            </div>
+
+    <p class="footer">Sean McConnell</p>
+</div>
+</body>
+</html>
